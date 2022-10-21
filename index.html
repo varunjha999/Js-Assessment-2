@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-Assignment-2</title>
+</head>
+<body>
+    <pre style="font-size:large ; color: blue;" >
+//Q1. Calculator
+
+A. const Calculator = (A, B, C) => 
+{
+  
+	switch(true) {
+    case (A=='+'):
+        result = B + C;
+        return result;
+        break;
+    case (A=='-'):
+        result = B - C;
+       return result
+        break;
+    case (A=='*'):
+        result = B * C;
+        return result;
+        break;
+    case (A=='/'):
+        result = B / C;
+        return result;
+        break;
+}
+    
+};
+
+
+
+
+//Q2. Check whether the condition is fulfilled or not?
+
+A. const Check_divisibility = (N) => {
+    if(N%6==0 && N%9==0){
+      return "Divisible by both";
+    }
+    else{
+      return "Not Divisible by both";
+    }    
+};
+
+
+
+
+//Q3. Eligible Voter
+
+A.const isEligible = (a) => {
+    if(a>18){
+      return "Eligible for Voting";
+    }
+    else
+    {
+      return "Not Eligible for Voting";
+    }
+};
+
+
+
+//Q4. Find Relation
+
+A. const findRelation = (x,y) => {
+    if(x<y)
+    {
+      return x+" is smaller than "+y ;
+    }
+    else if(x>y)
+    {
+      return x+" is greater than "+y;
+    }
+    else if(x==y)
+    {
+      return x+" is equal to "+y;
+    }
+};
+
+
+
+
+//Q5.Find Grades
+
+A. const findGrades = (a) => {
+    if(a<=10)
+    {
+      return "E";
+    }
+    else if(a>=11 && a<=20)
+    {
+      return "D";
+    }
+    else if(a>=21 && a<=30)
+    {
+      return "C";
+    }
+    else if(a>=31 && a<=40)
+    {
+      return "B";
+    }
+    else if(a>41 && a<=50)
+    {
+      return "A";
+    }
+};
+
+
+
+//Q6. Get Value
+
+A.const getValue = (a) => {
+    if(a == 'p' || a=='P')
+    {
+      return "PrepBytes";
+    }
+    else if(a == 'z' ||a== 'Z')
+    {
+      return "Zenith";
+    }
+    else if(a== 'e' ||a== 'E')
+    {
+      return "Expert Coder";
+    }
+    else
+    {
+      return "Data Structure";
+    }
+};
+//Q7. Find the maximum out of three numbers.
+
+A. const Max_out_of_three = (A,B,C) => {
+    if(A>B && A>C)
+    {
+      return A;
+    }
+    else if(B>A && B>C)
+    {
+      return B;
+    }
+    else if(C>A && C>B)
+    {
+      return C;
+    }
+    else
+    {
+      return -1;
+    }
+};
+
+
+//Q8. Second Smallest
+
+A. const findSndSmallest = (x,y,z) => {
+     if(x>y && x>z)
+     {
+       if(y>z)
+       {
+         return y;
+       }
+       else
+       {
+          return z;
+      }
+      
+     }
+     else if(y>x && y>z)
+     {
+       if(x>z)
+       {
+         return x;
+       }
+      else
+      {
+        return z;
+       }
+     }
+     else if(z>x && z>y)
+     {
+       if(x>y)
+       {
+         return x;
+      }
+      else
+      {
+        return y;
+      }
+    }
+};
+
+
+
+//Q9. Check whether the triangle is Acute or Obtuse
+
+A. const Triangle_Check = (A,B,C) => {
+     //Acute angle: Greater than 0 °, Less than 90°
+     //Obtuse angle: Greater than 90°, less than 180°
+     let angle = A+B+C;
+     if(angle == 180 && A > 0 && B > 0 && C > 0) 
+     {
+       if (A < 90 && B < 90 && C < 90) 
+       {
+         return "acute";
+       }
+       else if (A == 90 || B == 90 || C == 90)
+       {
+         return "right"
+       }
+      else
+      {
+      return "obtuse";
+      }
+     }
+   };
+</pre>
+</body>
+</html>
